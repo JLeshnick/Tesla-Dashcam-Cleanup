@@ -3,6 +3,7 @@
 A Python toolkit to efficiently clean up "junk" Tesla Sentry Mode clips (rain, wind, empty garages) from your USB drive.
 
 **The Problem:** Tesla saves events in separate folders. Checking them one by one is slow.
+
 **The Solution:** This tool extracts all event thumbnails into a single folder. You simply look at the pictures, delete the ones that show nothing interesting, and the tool will automatically delete the corresponding massive video folders for you.
 
 ## ⚠️ Important Warning
