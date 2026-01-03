@@ -29,7 +29,7 @@ While safety features are included (confirmation prompts, protected folders), yo
 Before running anything, you need to tell the scripts where your Tesla USB drive is located.
 
 1.  Plug in your Tesla USB drive. Check which drive letter it was assigned (e.g., `D:`, `E:`, `F:`).
-2.  Right-click `extract_force.py` and select **Edit with Notepad** (or any text editor).
+2.  Right-click `thumbnail-review.py` and select **Edit with Notepad** (or any text editor).
 3.  Look for the configuration section at the top:
     ```python
     # --- CONFIGURATION ---
@@ -39,7 +39,7 @@ Before running anything, you need to tell the scripts where your Tesla USB drive
     ```
 4.  Update the `D:` to match your USB drive letter.
 5.  Save the file.
-6.  **Repeat steps 2-5** for the file `safe_cleanup.py`.
+6.  **Repeat steps 2-5** for the file `cleanup.py`.
 
 ---
 
@@ -52,7 +52,7 @@ This script scans your drive and copies the `thumb.png` from every event into a 
 2.  Type `cmd` in the address bar at the top of the File Explorer window and hit **Enter**. (This opens a black command terminal).
 3.  In the terminal, type the following and hit **Enter**:
     ```bash
-    python extract_force.py
+    python thumbnail_review.py
     ```
 4.  Wait for the process to finish. It will tell you how many thumbnails were extracted.
 
@@ -72,7 +72,7 @@ Now we sync your changes. This script looks at which thumbnails are left and del
 1.  Go back to your terminal window (or open a new one as described in Step 1).
 2.  Type the following and hit **Enter**:
     ```bash
-    python safe_cleanup.py
+    python cleanup.py
     ```
 3.  **Review the Report:** The script will list exactly which folders are about to be deleted and the total file size.
 4.  **Confirm:**
@@ -85,7 +85,7 @@ Now we sync your changes. This script looks at which thumbnails are left and del
 
 **The extraction script is missing files!**
 If your drive is under heavy load (e.g., you are copying files to it while running this), the script might miss files.
-* **Solution:** Stop all other file transfers. Wait 2 minutes for the drive to settle. Run `python extract_force.py` again. It will pick up the missing items.
+* **Solution:** Stop all other file transfers. Wait 2 minutes for the drive to settle. Run `python thumbnail-review.py` again. It will pick up the missing items.
 
 **I see "[PROTECTED]" folders in the cleanup report.**
 This means the script found a folder that had video files but **no** thumbnail in your review list.
