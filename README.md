@@ -1,4 +1,4 @@
-# TeslaCam Sentry Reviewer
+# TeslaCam Sentry Clips Cleanup Tool
 
 A Python toolkit to efficiently clean up "junk" Tesla Sentry Mode clips (rain, wind, empty garages) from your USB drive.
 
